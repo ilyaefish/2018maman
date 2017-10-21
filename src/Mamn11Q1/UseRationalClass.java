@@ -1,7 +1,7 @@
 package Mamn11Q1;
 
 import java.util.Scanner;
-//First Q
+
 public class UseRationalClass {
 
 	public static void main(String[] args) {
