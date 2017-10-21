@@ -18,7 +18,7 @@ public class Rational {
 
 	@Override
 	public String toString() {
-		return P + "/" + (int)Q;
+		return P + "/" + (int) Q;
 	}
 
 	public int getNumerator() {
@@ -54,18 +54,18 @@ public class Rational {
 	}
 
 	public Rational plus(Rational R) {
-		int p=(int) ((double) this.P * R.getDenominator() + this.Q * R.getNumerator());
-		double q=((double) this.P * R.getDenominator());
-		Rational ans = new Rational(p,q);
+		int p = (int) ((double) this.P * R.getDenominator() + this.Q * R.getNumerator());
+		double q = ((double) this.P * R.getDenominator());
+		Rational ans = new Rational(p, q);
 		return ans;
 
 	}
 
 	public Rational minus(Rational R) {
-		
-		int p=(int) ((double) this.P * R.getDenominator() - this.Q * R.getNumerator());
-		double q=((double) this.P * R.getDenominator());
-		Rational ans = new Rational(p,q);
+
+		int p = (int) ((double) this.P * R.getDenominator() - this.Q * R.getNumerator());
+		double q = ((double) this.P * R.getDenominator());
+		Rational ans = new Rational(p, q);
 		return ans;
 	}
 
@@ -73,7 +73,7 @@ public class Rational {
 
 		Rational ans = new Rational(this.P * R.P, this.Q * R.Q);
 		return ans;
-     	}
+	}
 
 	private int gdc(int p, double q) {
 		if (p < 0)
