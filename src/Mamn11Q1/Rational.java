@@ -1,5 +1,6 @@
 package Mamn11Q1;
 
+
 public class Rational {
 
 	private int P;
