@@ -23,10 +23,13 @@ public class Game {
 		valueMap.put("Queen", 10);
 		valueMap.put("King", 10);
 	}
+	
 	final static int WINING_NUMBER = 21;
+	//The computer will stop after he reach this number
+	final static int MAX_NUMBER_NUM = 15;
 	// execute application
 	public static void main(String args[]) {
-		; // constant number of wining valuew
+		; // constant number of wining value
 
 		DeckOfCards myDeckOfCards1 = new DeckOfCards();
 		myDeckOfCards1.shuffle(); // place Cards in random order
@@ -49,7 +52,7 @@ public class Game {
 			boolean more_cards = true;
 
 			while (more_cards) {
-				if (valueOfDeck(computerDeck) < 15)
+				if (valueOfDeck(computerDeck) < MAX_NUMBER_NUM)
 					computerDeck.add(myDeckOfCards.dealCard());
 
 				int reply2 = JOptionPane.showConfirmDialog(null,

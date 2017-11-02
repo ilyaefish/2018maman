@@ -26,6 +26,7 @@ public class UseRationalClass {
 			// scan.next();
 			d = scan.nextDouble();
 		} while (d <= 0);
+		scan.close();
 
 		Rational First = new Rational(a, b);
 		Rational Second = new Rational(c, d);
