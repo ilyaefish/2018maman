@@ -9,9 +9,6 @@ public class DeckOfCards {
 
 	private int currentCard; // index of next Card to be dealt
 
-
-
-
 	private final int NUMBER_OF_CARDS = 52; // constant number of Cards
 	private ArrayList<Card> deck = new ArrayList<Card>();
 	private Random randomNumbers; // random number generator
@@ -24,14 +21,12 @@ public class DeckOfCards {
 	// constructor fills deck of Cards
 	public DeckOfCards() {
 
-		// deck = new Card[NUMBER_OF_CARDS]; // create array of Card objects
 		currentCard = 0; // set currentCard so first Card dealt is deck[ 0 ]
 		randomNumbers = new Random(); // create random number generator
 
 		// populate deck with Card objects
 		for (int count = 0; count < NUMBER_OF_CARDS; count++)
 			deck.add(count, new Card(faces[count % 13], suits[count / 13]));
-		// deck[count] = new Card(faces[count % 13], suits[count / 13]);
 	} // end DeckOfCards constructor
 
 	// This constructor will be useful creating empty Deck
@@ -67,11 +62,7 @@ public class DeckOfCards {
 
 			// swap current Card with randomly selected Card
 			Collections.swap(deck, first, second);
-			// OLD
-			// Card temp = deck[first];
-			// deck[first] = deck[second];
-			// deck[second] = temp;
-		} // end for
+		} // end 
 	} // end method shuffle
 
 	// deal one Card
